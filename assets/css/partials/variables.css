@@ -11,8 +11,8 @@
   --border-color: #e0e0e0;
   
   /* Typography */
-  --font-primary: 'Custom Font', Arial, sans-serif;
-  --font-secondary: Georgia, serif;
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
   
   /* Bootstrap Breakpoints */
   --breakpoint-xs: 0;

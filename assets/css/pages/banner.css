@@ -1,0 +1,39 @@
+.banner-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-title-section {
+    margin-bottom: 6rem;
+}
+
+.brand-title-section h1{
+    margin-bottom: 4rem;
+}
+
+.text-image-grid {
+    background-color: #F5F1E8;
+    padding: 4rem 0;
+    position: relative;
+    text-align: right;
+    font-size: 24px;
+}
+
+.text-image-grid .image-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.text-image-grid .image-left img {
+    width: 100%;
+    height: 100%;
+}
