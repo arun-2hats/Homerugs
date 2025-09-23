@@ -9,6 +9,12 @@ footer {
             padding-top: 3rem;
             text-align: center;
         }
+
+        .top-footer {
+            div{
+                min-width: none;
+            }
+        }
     }
     p {
         margin-bottom: 0 !important;
@@ -23,6 +29,14 @@ footer {
                 font-size: var(--font-size-lg);
                 font-weight: lighter;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .top-footer {
+        div{
+            min-width: 200px;
         }
     }
 }
