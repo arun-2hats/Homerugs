@@ -21,6 +21,7 @@ footer {
                 text-decoration: none;
                 transition: color 0.3s ease;
                 font-size: var(--font-size-lg);
+                font-weight: lighter;
             }
         }
     }
