@@ -29,7 +29,39 @@
     <link rel="preload" href="assets/images/brand-banner.png" as="image" />
   </head>
   <body>
-    <header>Header Content</header>
+    <!-- Header -->
+    <header class="">
+      <div
+        class="header-wrapper d-flex justify-content-between align-items-center"
+      >
+        <div class="logo-wrapper">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+
+        <nav class="w-50 px-3 d-none d-lg-block">
+          <ul
+            class="d-flex align-items-center list-unstyled gap-4 justify-content-center h-100 w-100 justify-content-between"
+          >
+            <li>
+              <a type="tel" href="tel:+919876543210"
+                >Tel. Nr. +41 44 953 40 40</a
+              >
+            </li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Wohnwelten</a></li>
+            <li><a href="#">Marken</a></li>
+            <li><a href="#">Über uns</a></li>
+          </ul>
+        </nav>
+
+        <div class="action-wrapper">
+          <div class="search-wrapper">
+            <input type="text" placeholder="Search" />
+            <i class="fa-solid fa-magnifying-glass">s</i>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main class="">
       <section role="region" aria-label="Brand Section">
@@ -50,7 +82,7 @@
         <div class="container">
           <div class="brand-title-section container-small">
             <h1>Roviva</h1>
-            <p>
+            <p class="subtitle">
               Roviva Schlafzimmermöbel vereinen zeitloses Design mit Schweizer
               Präzision. Für spürbare Qualität und erholsamen Schlaf - Tag für
               Tag.
@@ -59,52 +91,170 @@
 
           <div class="row">
             <div class="col-12 col-md-6 col-xl-3">
-              <img src="./assets/images/brand-banner.png" alt="Banner 1" />
+              <div class="product-card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">Matratzen von Roviva</h2>
+                  <p class="product-subtitle">
+                    Beschreibungen zur Qualität der Matratzen
+                  </p>
+                  <button class="btn btn-primary">zu den Matratzen</button>
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
-              <img src="./assets/images/brand-banner.png" alt="Banner 1" />
+              <div class="product-card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/product/Tisch4 1.png" alt="" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">Betten von Roviva</h2>
+                  <p class="product-subtitle">
+                    Beschreibungen zur Qualität der Betten
+                  </p>
+                  <button class="btn btn-primary">zu den Betten</button>
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
-              <img src="./assets/images/brand-banner.png" alt="Banner 1" />
+              <div class="product-card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/product/Tisch3 1.png" alt="" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">Lattenroste von Roviva</h2>
+                  <p class="product-subtitle">
+                    Beschreibungen zur Qualität der Lattenroste
+                  </p>
+                  <button class="btn btn-primary">zu den Lattenrosten</button>
+                </div>
+              </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
-              <img src="./assets/images/brand-banner.png" alt="Banner 1" />
+              <div class="product-card">
+                <div class="image-wrapper">
+                  <img src="./assets/images/product/Tisch2 1.png" alt="" />
+                </div>
+                <div class="product-info">
+                  <h2 class="product-title">Zudecken von Roviva</h2>
+                  <p class="product-subtitle">
+                    Beschreibungen zur Qualität der Zudecken
+                  </p>
+                  <button class="btn btn-primary">zu den Zudecken</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="text-image-grid">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image-left">
-                <img src="./assets/images/Loris 1.png" alt="Bed image" />
+      <section>
+        <div class="text-image-grid">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="image-left">
+                  <img src="./assets/images/Loris 1.png" alt="Bed image" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6 text-area">
+                <h2>
+                  Roviva Komfort <br />
+                  Matratze
+                </h2>
+                <p>
+                  Geniesse erholsamen Schlaf auf der Roviva Komfort Matratze -
+                  gefertigt mit höchster Sorgfalt und aus besten Materialien.
+                  Atmungsaktive Oberflächen und punktelastischer Aufbau bieten
+                  ideale Körperstützung und ein angenehm trockenes Schlafklima.
+                  Schweizer Qualität, auf die du dich verlassen kannst -
+                  langlebig, komfortabel und durchdacht. Der Kern passt sich
+                  deinen Konturen an und unterstützt eine natürliche
+                  Schlaf-haltung. Ideal für alle, die Wert auf exzellente
+                  Verarbeitung und erhol-samen Schlaf legen.
+                </p>
+                <button class="btn btn-primary">zu den Roviva Matratzen</button>
               </div>
             </div>
-            <div class="col-md-6">
-              <h2>Roviva Komfort Matratze</h2>
-              <p>
-                Geniesse erholsamen Schlaf auf der Roviva Komfort Matratze -
-                gefertigt mit höchster Sorgfalt und aus besten Materialien.
-                Atmungsaktive Oberflächen und punktelastischer Aufbau bieten
-                ideale Körperstützung und ein angenehm trockenes Schlafklima.
-                Schweizer Qualität, auf die du dich verlassen kannst -
-                langlebig, komfortabel und durchdacht. Der Kern passt sich
-                deinen Konturen an und unterstützt eine natürliche
-                Schlaf-haltung. Ideal für alle, die Wert auf exzellente
-                Verarbeitung und erhol-samen Schlaf legen.
-              </p>
-              <button>
-                zu den Roviva Matratzen
-              </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container position-relative">
+          <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/Sofafs 1.png" alt="Brand 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Lampefs 1.png" alt="Brand 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Tischfs 1.png" alt="Brand 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Stuhlfs 1.png" alt="Brand 4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Schrank 2.png" alt="Brand 5" />
+              </div>
             </div>
           </div>
+          <!-- Optional navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </section>
     </main>
 
-    <footer>Footer Content</footer>
+    <!-- Footer -->
+    <footer class="">
+      <div class="footer-wrapper">
+        <div class="footer-bg container">
+          <div class="top-footer d-flex justify-content-between">
+            <div class="contact-details-wrapper">
+              <h3>Möbel Waeber AG</h3>
+              <p>Usterstr./ Schanzstr. 2</p>
+              <p>8330 Pfäffikon</p>
+              <p>044 953 40 40</p>
+              <p>info@moebel-waeber.ch</p>
+            </div>
+
+            <div class="service-time">
+              <h3>Öffnungszeiten</h3>
+              <p>Montag - Freitag</p>
+              <p>08:00 - 18:00</p>
+              <p>Samstag</p>
+              <p>9:00 - 17:00 Uhr</p>
+            </div>
+
+            <div class="quick-links">
+              <ul class="list-unstyled">
+                <li><a href="#">Minotti</a></li>
+                <li><a href="#">Knoll</a></li>
+                <li><a href="#">Cassina</a></li>
+                <li><a href="#">vitra</a></li>
+              </ul>
+            </div>
+
+            <div class="social-media-wrapper">
+              <h3>Social Media</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom-footer">
+            <p>© 2025 Möbel Waeber / Datenschutz / AGB / Impressum.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Bootstrap 5 JavaScript -->
     <script src="./vendor/js/bootstrap.bundle.min.js"></script>
 

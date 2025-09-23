@@ -6,8 +6,10 @@
   --accent-color: #e74c3c;
   --background-color-light: #E0E0E0;
   --background-color-dark: #4A4A4A;
+  --bg-gray: #F1F1F1;
   --text-color: #000000;
-  --text-light: #ffffff;
+  --text-light: #4A4A4A;
+  --text-white: #ffffff;
   --border-color: #e0e0e0;
   
   /* Typography */
@@ -33,7 +35,7 @@
   
   /* Heading Font Sizes (Mobile First) */
   --h1-font-size: 28px;
-  --h2-font-size: 24px;
+  --h2-font-size: 28px;
   --h3-font-size: 20px;
   --h4-font-size: 18px;
   --h5-font-size: 16px;
@@ -71,7 +73,7 @@
     
     /* Heading Font Sizes */
     --h1-font-size: 32px;
-    --h2-font-size: 28px;
+    --h2-font-size: 32px;
     --h3-font-size: 24px;
     --h4-font-size: 20px;
     --h5-font-size: 18px;
@@ -93,7 +95,7 @@
     
     /* Heading Font Sizes */
     --h1-font-size: 36px;
-    --h2-font-size: 32px;
+    --h2-font-size: 36px;
     --h3-font-size: 24px;
     --h4-font-size: 24px;
     --h5-font-size: 20px;
@@ -115,7 +117,7 @@
     
     /* Heading Font Sizes */
     --h1-font-size: 40px;
-    --h2-font-size: 36px;
+    --h2-font-size: 40px;
     --h3-font-size: 28px;
     --h4-font-size: 28px;
     --h5-font-size: 24px;
@@ -136,8 +138,8 @@
     --font-size-display: 48px;
     
     /* Heading Font Sizes */
-    --h1-font-size: 48px;
-    --h2-font-size: 40px;
+    --h1-font-size: 44px;
+    --h2-font-size: 44px;
     --h3-font-size: 30px;
     --h4-font-size: 32px;
     --h5-font-size: 28px;
@@ -154,12 +156,12 @@
     --font-size-base: 19px;
     --font-size-lg: 24px;
     --font-size-xl: 30px;
-    --font-size-xxl: 36px;
+    --font-size-xxl: 32px;
     --font-size-display: 52px;
     
     /* Heading Font Sizes */
     --h1-font-size: 48px;
-    --h2-font-size: 44px;
+    --h2-font-size: 48px;
     --h3-font-size: 32px;
     --h4-font-size: 36px;
     --h5-font-size: 32px;

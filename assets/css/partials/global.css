@@ -34,7 +34,8 @@ h6 { font-size: var(--h6-font-size); }
 
 p {
   margin-bottom: var(--spacing-md);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xxl);
+  line-height: 2.25rem;
   font-weight: lighter;
 }
 
@@ -65,5 +66,5 @@ li {
 }
 
 section {
-  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
