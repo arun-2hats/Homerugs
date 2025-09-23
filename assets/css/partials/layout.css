@@ -7,37 +7,9 @@
   padding: 0 var(--spacing-md);
 }
 
-/* Small devices (sm) - ≥576px */
-@media (min-width: 576px) {
-  .container-small {
-    max-width: 540px;
-  }
-}
-
-/* Medium devices (md) - ≥768px */
-@media (min-width: 768px) {
-  .container-small {
-    max-width: 720px;
-  }
-}
-
-/* Large devices (lg) - ≥992px */
-@media (min-width: 992px) {
-  .container-small {
-    max-width: 900px;
-  }
-}
-
-/* Extra Large devices (xl) - ≥1200px */
-@media (min-width: 1200px) {
-  .container-small {
-    max-width: 950px;
-  }
-}
-
 /* Extra Extra Large devices (xxl) - ≥1400px */
 @media (min-width: 1400px) {
   .container-small {
-    max-width: 950px;
+    max-width: 960px;
   }
 } 
