@@ -1,45 +1,42 @@
   const swiper = new Swiper('.banner-slider', {
-    loop: true,               // infinite loop
+    loop: true,     
     autoplay: {
-      delay: 3000,            // auto slide every 3s
+      delay: 3000, 
       disableOnInteraction: false,
     },
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,        // click dots to change
+      clickable: true,  
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    effect: 'slide',          // you can also try 'fade'
+    effect: 'slide',   
   });
 
 
   const brandSwiper = new Swiper('.brand-slider', {
     loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    autoplay: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 4,   // default (desktop)
+    slidesPerView: 4, 
     spaceBetween: 20,
     breakpoints: {
       1024: {
-        slidesPerView: 4, // desktop
+        slidesPerView: 4,
       },
       768: {
-        slidesPerView: 3, // tablet
+        slidesPerView: 3,
       },
       480: {
-        slidesPerView: 2, // mobile
+        slidesPerView: 2, 
       },
       0: {
-        slidesPerView: 1, // very small
+        slidesPerView: 1,
       }
     }
   });
