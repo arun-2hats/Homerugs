@@ -1,22 +1,43 @@
 /* CSS Variables - Colors, fonts, spacing */
 :root {
   /* Colors */
-  --primary-color: #3498db;
-  --secondary-color: #2c3e50;
+  --primary-color: #2F4F4F;
+  --secondary-color: #EC221F;
   --accent-color: #e74c3c;
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --text-light: #666666;
+  --background-color-light: #E0E0E0;
+  --background-color-dark: #4A4A4A;
+  --text-color: #000000;
+  --text-light: #ffffff;
   --border-color: #e0e0e0;
   
   /* Typography */
   --font-primary: 'Inter', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
+  
+  /* Bootstrap Breakpoints */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+  
+  /* Base Font Sizes (Mobile First - xs) */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
   --font-size-base: 16px;
-  --font-size-small: 14px;
-  --font-size-large: 18px;
-  --font-size-xl: 24px;
-  --font-size-xxl: 32px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+  --font-size-display: 32px;
+  
+  /* Heading Font Sizes (Mobile First) */
+  --h1-font-size: 28px;
+  --h2-font-size: 24px;
+  --h3-font-size: 20px;
+  --h4-font-size: 18px;
+  --h5-font-size: 16px;
+  --h6-font-size: 14px;
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -25,9 +46,125 @@
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
   --spacing-xxl: 3rem;
+
+  --section-padding: 6.25rem;
   
   /* Layout */
   --max-width: 1200px;
   --border-radius: 4px;
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive Font Sizes using Bootstrap Breakpoints */
+
+/* Small devices (sm) - ≥576px */
+@media (min-width: 576px) {
+  :root {
+    /* Base Font Sizes */
+    --font-size-xs: 13px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 22px;
+    --font-size-xxl: 26px;
+    --font-size-display: 36px;
+    
+    /* Heading Font Sizes */
+    --h1-font-size: 32px;
+    --h2-font-size: 28px;
+    --h3-font-size: 24px;
+    --h4-font-size: 20px;
+    --h5-font-size: 18px;
+    --h6-font-size: 16px;
+  }
+}
+
+/* Medium devices (md) - ≥768px */
+@media (min-width: 768px) {
+  :root {
+    /* Base Font Sizes */
+    --font-size-xs: 14px;
+    --font-size-sm: 15px;
+    --font-size-base: 17px;
+    --font-size-lg: 19px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 28px;
+    --font-size-display: 40px;
+    
+    /* Heading Font Sizes */
+    --h1-font-size: 36px;
+    --h2-font-size: 32px;
+    --h3-font-size: 24px;
+    --h4-font-size: 24px;
+    --h5-font-size: 20px;
+    --h6-font-size: 18px;
+  }
+}
+
+/* Large devices (lg) - ≥992px */
+@media (min-width: 992px) {
+  :root {
+    /* Base Font Sizes */
+    --font-size-xs: 14px;
+    --font-size-sm: 16px;
+    --font-size-base: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 26px;
+    --font-size-xxl: 30px;
+    --font-size-display: 44px;
+    
+    /* Heading Font Sizes */
+    --h1-font-size: 40px;
+    --h2-font-size: 36px;
+    --h3-font-size: 28px;
+    --h4-font-size: 28px;
+    --h5-font-size: 24px;
+    --h6-font-size: 20px;
+  }
+}
+
+/* Extra Large devices (xl) - ≥1200px */
+@media (min-width: 1200px) {
+  :root {
+    /* Base Font Sizes */
+    --font-size-xs: 15px;
+    --font-size-sm: 16px;
+    --font-size-base: 18px;
+    --font-size-lg: 21px;
+    --font-size-xl: 28px;
+    --font-size-xxl: 32px;
+    --font-size-display: 48px;
+    
+    /* Heading Font Sizes */
+    --h1-font-size: 48px;
+    --h2-font-size: 40px;
+    --h3-font-size: 30px;
+    --h4-font-size: 32px;
+    --h5-font-size: 28px;
+    --h6-font-size: 24px;
+  }
+}
+
+/* Extra Extra Large devices (xxl) - ≥1400px */
+@media (min-width: 1400px) {
+  :root {
+    /* Base Font Sizes */
+    --font-size-xs: 16px;
+    --font-size-sm: 17px;
+    --font-size-base: 19px;
+    --font-size-lg: 24px;
+    --font-size-xl: 30px;
+    --font-size-xxl: 36px;
+    --font-size-display: 52px;
+    
+    /* Heading Font Sizes */
+    --h1-font-size: 48px;
+    --h2-font-size: 44px;
+    --h3-font-size: 32px;
+    --h4-font-size: 36px;
+    --h5-font-size: 32px;
+    --h6-font-size: 28px;
+  }
+}
+
+
