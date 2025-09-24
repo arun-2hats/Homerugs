@@ -201,6 +201,7 @@
   width: 18.75rem;
   background-color: var(--bg-gray);
   max-width: 100%;
+  position: relative;
 }
 
 .product-card .image-wrapper img {
@@ -225,4 +226,39 @@
 
 .product-card .product-info button {
   margin-top: .6rem;
+}
+
+.product-card .image-wrapper .offer-badge {
+  background-color: var(--accent-color);
+  color: var(--text-white);
+  border-radius: var(--border-radius);
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  span{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-white);
+    line-height: 0;
+  }
+
+  p{
+    font-size: .6rem;
+    font-weight: bold;
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 2.9;
+    
+  }
 }
