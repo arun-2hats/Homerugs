@@ -32,7 +32,7 @@
 
 .mobile-menu-toggle {
   background: none;
-  border: 2px solid var(--text-color);
+  border: 0px solid var(--text-color);
   border-radius: 4px;
   width: 40px;
   height: 40px;
@@ -41,11 +41,13 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: var(--font-size-xxl);
 }
 
 .mobile-menu-toggle:hover {
   background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: var(--text-white);
+  /* border-color: var(--primary-color); */
 }
 
 .mobile-menu-toggle .navbar-toggler-icon {
@@ -60,7 +62,7 @@
 }
 
 .mobile-menu-toggle:hover .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
 }
 
 /* Desktop Header */
@@ -272,6 +274,12 @@
 
 .mobile-navigation li a:hover {
   color: var(--secondary-color);
+}
+
+.social-media-wrapper{
+  i{
+    font-size: var(--font-size-xxl);
+  }
 }
 
 /* Mobile Navigation Responsive */

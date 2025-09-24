@@ -37,7 +37,7 @@
                     
                     <div class="mobile-actions d-flex align-items-center gap-3">
                         <button class="mobile-menu-toggle " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                            <span class="navbar-toggler-icon"></span>
+                            <i class="icon-menu"></i>
                         </button>
                     </div>
                 </div>
@@ -70,8 +70,8 @@
             
                     <div class="desktop-search">
                         <div class="search-wrapper">    
-                            <input type="text" placeholder="Search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" aria-label="Search">
+                            <i class="icon-search"></i>
                         </div>
                     </div>
                 </div>
@@ -484,7 +484,7 @@
         <footer class="">
             <div class="footer-wrapper">
                 <div class="footer-bg container">
-                    <div class="top-footer d-flex flex-row justify-content-between flex-wrap gap-5">
+                    <div class="top-footer d-flex flex-column flex-sm-row justify-content-between flex-wrap gap-4 gap-lg-5 text-center text-sm-start">
                         <div class="contact-details-wrapper">
                             <h3>Möbel Waeber AG</h3>
                             <p>Usterstr./ Schanzstr. 2</p>
@@ -510,12 +510,15 @@
                             </ul>
                         </div>
                 
-                        <div class="social-media-wrapper ">
-                            <h3>Social Media</h3>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">Twitter</a></li>
+                        <div class="social-media-wrapper d-flex flex-column align-items-center align-items-sm-start justify-content-center justify-content-sm-start">
+                            <h3 >Social Media</h3>
+                            <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
+                              <li><a href="#">
+                                <i class="icon-facebook"></i>
+                              </a></li>
+                              <li><a href="#">
+                                <i class="icon-instagram"></i>
+                              </a></li>
                             </ul>
                         </div>
                     </div>
