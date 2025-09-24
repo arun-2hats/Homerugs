@@ -1,559 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homerugs</title>
-        <meta name="description" content="Homerugs">
 
-        <!-- Bootstrap 5 CSS -->
-        <link href="./vendor/css/bootstrap.min.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homerugs</title>
+  <meta name="description" content="Homerugs">
 
-        <!-- Swiper slider CSS -->
-        <link rel="stylesheet" href="./vendor/css/swiper-bundle.min.css" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="./vendor/css/bootstrap.min.css" rel="stylesheet" />
 
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="assets/images/logo.png">
-
-        <!-- Preload critical resources -->
-        <link rel="preload" href="assets/fonts/custom-font.woff2" as="font"
-            type="font/woff2" crossorigin>
-        <link rel="preload" href="assets/images/banner.jpg" as="image">
-    </head>
-    <body>
-
-        <!-- Header -->
-        <header class="header">
-            <div class="header-wrapper">
-                <!-- Mobile Header Layout (xs, sm, md, lg) -->
-                <div class="mobile-header d-flex d-xl-none justify-content-between align-items-center w-100 py-3">
-                    <div class="logo-wrapper">
-                        <img src="./assets/images/logo.png" alt="logo" class="logo">
-                    </div>
-                    
-                    <div class="mobile-actions d-flex align-items-center gap-3">
-                        <button class="mobile-menu-toggle " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                            <i class="icon-menu"></i>
-                        </button>
-                    </div>
-                </div>
-
-                
-
-                <!-- Mobile Search Bar (visible on mobile/tablet) -->
-                <div class="mobile-search d-flex d-xl-none w-100 pb-3">
-                    <div class="search-wrapper flex-grow-1">    
-                        <input type="text" aria-label="Search">
-                        <i class="icon-search"></i>
-                    </div>
-                </div>
-
-                <!-- Desktop Header Layout (xl+) -->
-                <div class="desktop-header d-none d-xl-flex justify-content-between align-items-center w-100">
-                    <div class="logo-wrapper">
-                        <img src="./assets/images/logo.png" alt="logo" class="logo">
-                    </div>
-            
-                    <nav class="main-navigation flex-grow-1 px-4">
-                        <ul class="d-flex align-items-center list-unstyled justify-content-center mb-0">
-                            <li><a href="tel:+41449534040">Tel. Nr. +41 44 953 40 40</a></li>
-                            <li><a href="#">Kontakt</a></li>
-                            <li><a href="#">Wohnwelten</a></li>
-                            <li><a href="#">Marken</a></li>
-                            <li><a href="#">Über uns</a></li>
-                        </ul>
-                    </nav>
-            
-                    <div class="desktop-search">
-                        <div class="search-wrapper">    
-                            <input type="text" aria-label="Search">
-                            <i class="icon-search"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <!-- Home Hero section banner -->
-            <section role="region" aria-label="Brand Section">
-                <div class="swiper banner-slider">
-                  <!-- Slides wrapper -->
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/images/brand-banner.png" alt="Banner 1" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/images/brand-banner.png" alt="Banner 2" />
-                    </div>
-                  </div>
-                </div>
-            </section>
-
-            <!-- Home Content Section -->
-            <section class="home-statistic-products-section">
-                <div class="container-small">
-                    <div class="brand-title-section">
-                        <h1>Roviva</h1>
-                        <p class="subtitle">
-                        Roviva Schlafzimmermöbel vereinen zeitloses Design mit Schweizer
-                        Präzision. Für spürbare Qualität und erholsamen Schlaf - Tag für
-                        Tag.
-                        </p>
-                    </div>
-
-                    <!-- Furniture Category Section -->
-                    <div class="row g-4 statistic-cards">
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="statistic-card text-center text-md-start ">
-                                <div class="statistic-count">
-                                    123
-                                </div>
-                                <h3 class="statistic-title">
-                                    Polstermöbel
-                                </h3>
-                                <p class="statistic-subtitle">
-                                    Aktuell im Outlet stark reduziert – Sofas, Sessel & mehr bis zu 70 % günstiger.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="statistic-card text-center text-md-start">
-                                <div class="statistic-count">
-                                    23
-                                </div>
-                                <h3 class="statistic-title">
-                                    Gartenmöbel
-                                </h3>
-                                <p class="statistic-subtitle">
-                                    Bereit für den Sommer? Gartenmöbel jetzt bis zu 60 % günstiger.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="statistic-card text-center text-md-start">
-                                <div class="statistic-count">
-                                    53
-                                </div>
-                                <h3 class="statistic-title">
-                                    Teppiche
-                                </h3>
-                                <p class="statistic-subtitle">
-                                    Teppiche von klassisch bis modern - aktuell im Outlet reduziert
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="row g-4">
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <div class="product-card">
-                                <div class="image-wrapper">
-                                  <img src="./assets/images/product/Tisch1 9.png" alt="" />
-                                  <div class="offer-badge ">
-                                    <span>70%</span>
-                                    <p>Rabatt</p>
-                                  </div>
-                                </div>
-                                <div class="product-info">
-                                  <h2 class="product-title">Matratzen von Roviva</h2>
-                                  <p class="product-subtitle">
-                                    Beschreibungen zur Qualität der Matratzen
-                                  </p>
-                                  <button class="btn btn-primary">zu den Matratzen</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Brand slider section -->
-            <section class="">
-                <div class="home-brand-slider-section">
-                    <div class="container-small position-relative ">
-                        <div class="swiper brand-slider">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <img src="./assets/images/Schrank_trans.png" height="50" width="215" alt="Brand 1" />
-                            </div>
-                            <div class="swiper-slide">
-                              <img src="./assets/images/Lampefs_trans.png" height="50" width="215" alt="Brand 2" />
-                            </div>
-                            <div class="swiper-slide">
-                              <img src="./assets/images/Tischfs_trans.png" height="50" width="215" alt="Brand 3" />
-                            </div>
-                            <div class="swiper-slide">
-                              <img src="./assets/images/Stuhlfs_trans.png" height="50" width="215" alt="Brand 4" />
-                            </div>
-                            <div class="swiper-slide">
-                              <img src="./assets/images/Schrank_trans.png" height="50" width="215" alt="Brand 5" />
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Optional navigation -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Unsere Wohnwelten-->
-            <section class="home-our-worlds-section">
-                <div class="container-small">
-                    <h2 class="">Unsere Wohnwelten</h2>
-
-                    <div class="row g-4">
-                        <div class="col-6 col-md-4">
-                            <div class="home-our-worlds-card">
-                                <img src="./assets/images/essen.png" alt="Our Worlds 1" />
-                            </div>
-                            <h3>Essen</h3>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="home-our-worlds-card">
-                                <img src="./assets/images/wohnen.png" alt="Our Worlds 1" />
-                            </div>
-                            <h3>Wohnen</h3>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="home-our-worlds-card">
-                                <img src="./assets/images/schlafen.png" alt="Our Worlds 1" />
-                            </div>
-                            <h3>Schlafen</h3>
-                        </div>
-                        
-                        <div class="col-6 col-md-4">
-                            <div class="home-our-worlds-card">
-                                <img src="./assets/images/garten.png" alt="Our Worlds 1" />
-                            </div>
-                            <h3>Garten</h3>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="home-our-worlds-card">
-                                <img src="./assets/images/teppiche.png" alt="Our Worlds 1" />
-                            </div>
-                            <h3>Badezimmer</h3>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="home-our-worlds-card">
-                                <img src="./assets/images/office.png" alt="Our Worlds 1" />
-                            </div>
-                            <h3>Kinderzimmer</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="inspiration-content-section ">
-                <div class="container-small ">
-                  <div class=" inspiration-content-wrapper">
-                    <h2>Inspiration für Ihr Zuhause</h2>
-                    <p class="subtitle">
-                      Roviva Schlafzimmermöbel vereinen zeitloses Design mit Schweizer
-                      Präzision. Für spürbare Qualität und erholsamen Schlaf - Tag für
-                      Tag.
-                    </p>
-                  </div>
-                </div>
-            </section>
-
-            <section>
-              <div class="mobel-mithalung-section">
-                <div class="container-small">
-                  <h2>Möbel mit Haltung - seit Generationen.</h2>
-                  <p class="subtitle">
-                    Bei Möbel Waeber geht es um mehr als Möbel. Es geht um Räume zum Wohlfühlen, um Qualität mit Bestand und um Beratung mit Herz.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <div class="content-with-image-section container d-flex flex-column">
-                <!-- History Section -->
-                <div class="image-content-wrapper row g-0">
-                  <div class="col-12 col-lg-6">
-                    <img src="./assets/images/history.jpg" alt="History" />
-                  </div>
-                  <div class="content-data col-12 col-lg-6">
-                    <h2>Ein Familienbetrieb nit Geschichte</h2>
-                    <p>
-                      1933 gegründet, steht Möbel Waeber seit über 90 Jahren für Verlässlichkeit, Qualität und Nähe zur Kundschaft. Aus einem kleinen Laden wurde ein fest verankerter Betrieb in der Region
-                      - mit vielen treuen Kundinnen und Kunden über Generationen hinweg.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Todays Section -->
-                <div class="image-content-wrapper row g-0">
-                  <div class="content-data col-12 col-lg-6 order-2 order-lg-1">
-                    <h2>Heute: Raum für Wohnideen</h2>
-                    <p>
-                      Auf über 10'000 m² zeigen wir, wie modernes Wohnen heute aussieht - stilvoll, funktional und inspirierend. Ob Sofa, Tisch oder Teppich: Wir bieten Qualität, die bleibt, und Beratung, die persönlich ist. Möbel Waeber ist und bleibt ein Familienunternehmen mit Handschlagqualität.
-                    </p>
-                  </div>
-                  <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="./assets/images/today.jpg" alt="History" />
-                  </div>
-                </div>
-
-                <!-- Text Content Section -->
-                <div class="handwerk-content-section">
-                  <div class=" handwerk-content-wrapper">
-                    <h2>Handwerk mit Herz und Verstand</h2>
-                    <p class="subtitle">
-                      Unsere Leidenschaft fürs Wohnen hört nicht beim Möbel auf. Seit jeher gehört auch das Handwerk zu Möbel Waeber -
-                      ob präzise Anpassung, Massanfertigung oder sorgsame Montage. So entstehen Lösungen, die perfekt passen - und ein Service, auf den man sich verlassen kann.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Carpentry Section -->
-                <div class="image-content-wrapper row g-0">
-
-                  <div class="col-12 col-lg-6">
-                    <img src="./assets/images/carpentry-workshop.jpg" alt="History" />
-                  </div>
-                  <div class="content-data col-12 col-lg-6">
-                    <h2>Massarbeit aus unserer Schreinerei </h2>
-                    <p>
-                      Ob millimetergenaue Anpassung, Möbelumbau oder individuelle Anfertigung: Unser erfahrenes Schreinerteam setzt Ihre Wohnideen zuverlässig um.Präzise, persönlich und mit viel Liebe zum Detail.
-                    </p>
-                    <p>
-                      <strong>
-                        📞 Rufen Sie uns an unter: <br><a href="tel:+41449534040">044 953 40 40</a></p>
-                      </strong>
-                  </div>
-                </div>
-              </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="">
-            <div class="footer-wrapper">
-                <div class="footer-bg container">
-                    <div class="top-footer d-flex flex-column flex-sm-row justify-content-between flex-wrap gap-4 gap-lg-5 text-center text-sm-start">
-                        <div class="contact-details-wrapper">
-                            <h3>Möbel Waeber AG</h3>
-                            <p>Usterstr./ Schanzstr. 2</p>
-                            <p>8330 Pfäffikon</p>
-                            <p><a href="tel:+41449534040" >044 953 40 40</a></p>
-                            <p><a href="mailto:info@moebel-waeber.ch" >info@moebel-waeber.ch</a></p>
-                        </div>  
-                
-                        <div class="service-time ">
-                            <h3>Öffnungszeiten</h3>
-                            <p>Montag - Freitag</p> 
-                            <p>08:00 - 18:00</p>
-                            <p>Samstag</p>
-                            <p>9:00 - 17:00 Uhr</p>
-                        </div>
-                
-                        <div class="quick-links ">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Minotti</a></li>
-                                <li><a href="#">Knoll</a></li>
-                                <li><a href="#">Cassina</a></li>
-                                <li><a href="#">vitra</a></li>
-                            </ul>
-                        </div>
-                
-                        <div class="social-media-wrapper d-flex flex-column align-items-center align-items-sm-start justify-content-center justify-content-sm-start">
-                            <h3 >Social Media</h3>
-                            <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
-                              <li><a href="#">
-                                <i class="icon-facebook"></i>
-                              </a></li>
-                              <li><a href="#">
-                                <i class="icon-instagram"></i>
-                              </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="bottom-footer">
-                        <p>© 2025 Möbel Waeber / Datenschutz / AGB / Impressum.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+  <!-- Swiper slider CSS -->
+  <link rel="stylesheet" href="./vendor/css/swiper-bundle.min.css" />
 
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menü</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <nav class="mobile-navigation">
-                    <ul class="list-unstyled mb-0">
-                      <li><a href="#">Kontakt</a></li>
-                      <li><a href="#">Wohnwelten</a></li>
-                      <li><a href="#">Marken</a></li>
-                      <li><a href="#">Über uns</a></li>
-                      <li><a href="tel:+41449534040">Tel. Nr. +41 44 953 40 40</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/fonts/custom-font.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/banner.jpg" as="image">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-wrapper">
+      <!-- Mobile Header Layout (xs, sm, md, lg) -->
+      <div class="mobile-header d-flex d-xl-none justify-content-between align-items-center w-100 py-3">
+        <div class="logo-wrapper">
+          <img src="./assets/images/logo.png" alt="logo" class="logo">
         </div>
-            
-        <script src="./vendor/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Swiper Slider JavaScript -->
-        <script src="./vendor/js/swiper-bundle.min.js"></script>
+        <div class="mobile-actions d-flex align-items-center gap-3">
+          <button class="mobile-menu-toggle " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <i class="icon-menu"></i>
+          </button>
+        </div>
+      </div>
 
-        <!-- Custom JavaScript -->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+
+      <!-- Mobile Search Bar (visible on mobile/tablet) -->
+      <div class="mobile-search d-flex d-xl-none w-100 pb-3">
+        <div class="search-wrapper flex-grow-1">
+          <input type="text" aria-label="Search">
+          <i class="icon-search"></i>
+        </div>
+      </div>
+
+      <!-- Desktop Header Layout (xl+) -->
+      <div class="desktop-header d-none d-xl-flex justify-content-between align-items-center w-100">
+        <div class="logo-wrapper">
+          <img src="./assets/images/logo.png" alt="logo" class="logo">
+        </div>
+
+        <nav class="main-navigation flex-grow-1 px-4">
+          <ul class="d-flex align-items-center list-unstyled justify-content-center mb-0">
+            <li><a href="tel:+41449534040">Tel. Nr. +41 44 953 40 40</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Wohnwelten</a></li>
+            <li><a href="#">Marken</a></li>
+            <li><a href="#">Über uns</a></li>
+          </ul>
+        </nav>
+
+        <div class="desktop-search">
+          <div class="search-wrapper">
+            <input type="text" aria-label="Search">
+            <i class="icon-search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Hero section banner -->
+    <section role="region" aria-label="Brand Section">
+      <div class="swiper banner-slider">
+        <!-- Slides wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/brand-banner.png" alt="Banner 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/brand-banner.png" alt="Banner 2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Content Section -->
+    <section class="home-statistic-products-section">
+      <div class="container-small">
+        <div class="brand-title-section">
+          <h1>Roviva</h1>
+          <p class="subtitle">
+            Roviva Schlafzimmermöbel vereinen zeitloses Design mit Schweizer
+            Präzision. Für spürbare Qualität und erholsamen Schlaf - Tag für
+            Tag.
+          </p>
+        </div>
+
+        <!-- Furniture Category Section -->
+        <div class="row g-4 statistic-cards">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="statistic-card text-center text-md-start ">
+              <div class="statistic-count">
+                123
+              </div>
+              <h3 class="statistic-title">
+                Polstermöbel
+              </h3>
+              <p class="statistic-subtitle">
+                Aktuell im Outlet stark reduziert – Sofas, Sessel & mehr bis zu 70 % günstiger.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="statistic-card text-center text-md-start">
+              <div class="statistic-count">
+                23
+              </div>
+              <h3 class="statistic-title">
+                Gartenmöbel
+              </h3>
+              <p class="statistic-subtitle">
+                Bereit für den Sommer? Gartenmöbel jetzt bis zu 60 % günstiger.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="statistic-card text-center text-md-start">
+              <div class="statistic-count">
+                53
+              </div>
+              <h3 class="statistic-title">
+                Teppiche
+              </h3>
+              <p class="statistic-subtitle">
+                Teppiche von klassisch bis modern - aktuell im Outlet reduziert
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="product-card">
+              <div class="image-wrapper">
+                <img src="./assets/images/product/Tisch1 9.png" alt="" />
+                <div class="offer-badge ">
+                  <span>70%</span>
+                  <p>Rabatt</p>
+                </div>
+              </div>
+              <div class="product-info">
+                <h2 class="product-title">Matratzen von Roviva</h2>
+                <p class="product-subtitle">
+                  Beschreibungen zur Qualität der Matratzen
+                </p>
+                <button class="btn btn-primary">zu den Matratzen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand slider section -->
+    <section class="">
+      <div class="home-brand-slider-section">
+        <div class="container-small position-relative ">
+          <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/Schrank_trans.png" height="50" width="215" alt="Brand 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Lampefs_trans.png" height="50" width="215" alt="Brand 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Tischfs_trans.png" height="50" width="215" alt="Brand 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Stuhlfs_trans.png" height="50" width="215" alt="Brand 4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/Schrank_trans.png" height="50" width="215" alt="Brand 5" />
+              </div>
+            </div>
+          </div>
+          <!-- Optional navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unsere Wohnwelten-->
+    <section class="home-our-worlds-section">
+      <div class="container-small">
+        <h2 class="">Unsere Wohnwelten</h2>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-4">
+            <div class="home-our-worlds-card">
+              <img src="./assets/images/essen.png" alt="Our Worlds 1" />
+            </div>
+            <h3>Essen</h3>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="home-our-worlds-card">
+              <img src="./assets/images/wohnen.png" alt="Our Worlds 1" />
+            </div>
+            <h3>Wohnen</h3>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="home-our-worlds-card">
+              <img src="./assets/images/schlafen.png" alt="Our Worlds 1" />
+            </div>
+            <h3>Schlafen</h3>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="home-our-worlds-card">
+              <img src="./assets/images/garten.png" alt="Our Worlds 1" />
+            </div>
+            <h3>Garten</h3>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="home-our-worlds-card">
+              <img src="./assets/images/teppiche.png" alt="Our Worlds 1" />
+            </div>
+            <h3>Badezimmer</h3>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="home-our-worlds-card">
+              <img src="./assets/images/office.png" alt="Our Worlds 1" />
+            </div>
+            <h3>Kinderzimmer</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inspiration-content-section ">
+      <div class="container-small ">
+        <div class=" inspiration-content-wrapper">
+          <h2>Inspiration für Ihr Zuhause</h2>
+          <p class="subtitle">
+            Roviva Schlafzimmermöbel vereinen zeitloses Design mit Schweizer
+            Präzision. Für spürbare Qualität und erholsamen Schlaf - Tag für
+            Tag.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mobel-mithalung-section">
+        <div class="container-small">
+          <h2>Möbel mit Haltung - seit Generationen.</h2>
+          <p class="subtitle">
+            Bei Möbel Waeber geht es um mehr als Möbel. Es geht um Räume zum Wohlfühlen, um Qualität mit Bestand und um
+            Beratung mit Herz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content-with-image-section container d-flex flex-column">
+        <!-- History Section -->
+        <div class="image-content-wrapper row g-0">
+          <div class="col-12 col-lg-6">
+            <img src="./assets/images/history.jpg" alt="History" />
+          </div>
+          <div class="content-data col-12 col-lg-6">
+            <h2>Ein Familienbetrieb nit Geschichte</h2>
+            <p>
+              1933 gegründet, steht Möbel Waeber seit über 90 Jahren für Verlässlichkeit, Qualität und Nähe zur
+              Kundschaft. Aus einem kleinen Laden wurde ein fest verankerter Betrieb in der Region
+              - mit vielen treuen Kundinnen und Kunden über Generationen hinweg.
+            </p>
+          </div>
+        </div>
+
+        <!-- Todays Section -->
+        <div class="image-content-wrapper row g-0">
+          <div class="content-data col-12 col-lg-6 order-2 order-lg-1">
+            <h2>Heute: Raum für Wohnideen</h2>
+            <p>
+              Auf über 10'000 m² zeigen wir, wie modernes Wohnen heute aussieht - stilvoll, funktional und inspirierend.
+              Ob Sofa, Tisch oder Teppich: Wir bieten Qualität, die bleibt, und Beratung, die persönlich ist. Möbel
+              Waeber ist und bleibt ein Familienunternehmen mit Handschlagqualität.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <img src="./assets/images/today.jpg" alt="History" />
+          </div>
+        </div>
+
+        <!-- Text Content Section -->
+        <div class="handwerk-content-section">
+          <div class=" handwerk-content-wrapper">
+            <h2>Handwerk mit Herz und Verstand</h2>
+            <p class="subtitle">
+              Unsere Leidenschaft fürs Wohnen hört nicht beim Möbel auf. Seit jeher gehört auch das Handwerk zu Möbel
+              Waeber -
+              ob präzise Anpassung, Massanfertigung oder sorgsame Montage. So entstehen Lösungen, die perfekt passen -
+              und ein Service, auf den man sich verlassen kann.
+            </p>
+          </div>
+        </div>
+
+        <!-- Carpentry Section -->
+        <div class="image-content-wrapper row g-0">
+
+          <div class="col-12 col-lg-6">
+            <img src="./assets/images/carpentry-workshop.jpg" alt="History" />
+          </div>
+          <div class="content-data col-12 col-lg-6">
+            <h2>Massarbeit aus unserer Schreinerei </h2>
+            <p>
+              Ob millimetergenaue Anpassung, Möbelumbau oder individuelle Anfertigung: Unser erfahrenes Schreinerteam
+              setzt Ihre Wohnideen zuverlässig um.Präzise, persönlich und mit viel Liebe zum Detail.
+            </p>
+            <p>
+              <strong>
+                📞 Rufen Sie uns an unter: <br><a href="tel:+41449534040">044 953 40 40</a>
+            </p>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="footer-contact-section">
+        <div class="container">
+          <a href="https://moebel-waeber.ch/contact">Hier kommen wir in Kontakt</a>
+        </div>
+      </div>
+      <div class="news-letter">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-lg-6">
+              <img src="./assets/images/Tisch_Pr 1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+              <h2>
+                Newsletter
+              </h2>
+              <p>Melden Sie sich zum Möbel-Waeber Newsletter an und sichern Sie sich 10% Rabatt auf Ihren nächsten
+                Einkauf!</p>
+              <ul>
+                <li><span class="icon-tick"></span>Einrichtungsinspirationen</li>
+                <li><span class="icon-tick"></span>Schnäppchen und Angebote</li>
+                <li><span class="icon-tick"></span>Gewinnspiele und Aktionen</li>
+              </ul>
+              <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#register"
+                aria-controls="register">
+                Jetzt anmelden
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="">
+    <div class="footer-wrapper">
+      <div class="footer-bg container">
+        <div
+          class="top-footer d-flex flex-column flex-sm-row justify-content-between flex-wrap gap-4 gap-lg-5 text-center text-sm-start">
+          <div class="contact-details-wrapper">
+            <h3>Möbel Waeber AG</h3>
+            <p>Usterstr./ Schanzstr. 2</p>
+            <p>8330 Pfäffikon</p>
+            <p><a href="tel:+41449534040">044 953 40 40</a></p>
+            <p><a href="mailto:info@moebel-waeber.ch">info@moebel-waeber.ch</a></p>
+          </div>
+
+          <div class="service-time ">
+            <h3>Öffnungszeiten</h3>
+            <p>Montag - Freitag</p>
+            <p>08:00 - 18:00</p>
+            <p>Samstag</p>
+            <p>9:00 - 17:00 Uhr</p>
+          </div>
+
+          <div class="quick-links ">
+            <ul class="list-unstyled">
+              <li><a href="#">Minotti</a></li>
+              <li><a href="#">Knoll</a></li>
+              <li><a href="#">Cassina</a></li>
+              <li><a href="#">vitra</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="social-media-wrapper d-flex flex-column align-items-center align-items-sm-start justify-content-center justify-content-sm-start">
+            <h3>Social Media</h3>
+            <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
+              <li><a href="#">
+                  <i class="icon-facebook"></i>
+                </a></li>
+              <li><a href="#">
+                  <i class="icon-instagram"></i>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>© 2025 Möbel Waeber / Datenschutz / AGB / Impressum.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menü</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="mobile-navigation">
+        <ul class="list-unstyled mb-0">
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Wohnwelten</a></li>
+          <li><a href="#">Marken</a></li>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="tel:+41449534040">Tel. Nr. +41 44 953 40 40</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Register Offcanvas -->
+  <div class="offcanvas offcanvas-end register-offcanvas" tabindex="-1" id="register" aria-labelledby="registerLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="registerLabel">Anmeldung</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Damit wir dich über aktuelle Wohntrends, Aktionen und Neuheiten informieren können, trage dich einfach für
+        unseren Newsletter ein.</p>
+      <p>Du erhältst im Anschluss einen Bestätigungslink an deine E-Mail-Adresse.</p>
+      <form action="">
+        <div class="form-group">
+          <label class="sr-only" for="email-address">E-Mail-Adresse</label>
+          <input type="email" id="email-address" class="form-control email-input" placeholder="E-Mail-Adresse*"
+            required>
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" name="privacy" id="privacy">
+          <label for="privacy">E-Mail Benachrichtigungen erlauben</label>
+        </div>
+        <div>
+          <p>Du möchtest regelmässig per E-Mail über exklusive Angebote, Wohninspirationen und neue Produkte aus dem
+            Möbel Waeber Sortiment informiert werden? Dann nutze unseren kostenlosen Newsletter-Service!</p>
+          <p>Mit deiner Anmeldung erhältst du:</p>
+          <ul>
+            <li>Wohnideen & Einrichtungs-Tipps</li>
+            <li>Aktionen & Rabattaktionen</li>
+            <li>Infos zu neuen Kollektionen & Trends</li>
+          </ul>
+          <p>Wir brauchen nur deine Einwilligung – und schon kann es losgehen. Einfach oben eintragen und anmelden</p>
+        </div>
+        <button class="btn btn-secondary w-100" type="submit">Jetzt anmelden</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./vendor/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper Slider JavaScript -->
+  <script src="./vendor/js/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
