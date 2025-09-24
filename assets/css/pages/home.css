@@ -61,8 +61,18 @@
 
 .inspiration-content-section{
     .inspiration-content-wrapper{
-        h1{
-            padding: 1.5rem 0;
+
+        border-top: 2px solid var(--border-black);
+        border-bottom: 2px solid var(--border-black);
+        padding: 1rem 0;
+        h2{
+            padding: 1.25rem 0;
         }
     }
+}
+
+.mobel-mithalung-section{
+    background-color: var(--background-color-dark);
+    padding: var(--spacing-xl) 0;
+    color: var(--text-white);
 }
