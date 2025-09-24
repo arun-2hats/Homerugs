@@ -53,7 +53,7 @@
   color: var(--text-color);
   background: none;              
   border: none;                 
-  font-size: 20px;               
+  font-size: 30px;               
   width: auto;
   height: auto;
 }
@@ -63,4 +63,8 @@
 }
 .swiper-button-next {
   right: -35px !important;
+}
+
+.swiper-navigation-icon {
+  display: none;
 }
