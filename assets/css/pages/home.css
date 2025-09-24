@@ -76,3 +76,59 @@
     padding: var(--spacing-xl) 0;
     color: var(--text-white);
 }
+
+.content-with-image-section{
+    gap: 2.5rem;
+    .image-content-wrapper{
+        display: flex;
+        align-items: stretch;
+        
+        img{
+            width: 100%;
+            min-height: 620px;
+            height: 100%;
+            object-fit: cover;
+
+            @media (max-width: 992px) {
+                min-height: 250px;
+            }
+        }
+
+        .content-data{
+            background-color: var(--bg-light-1);
+            padding: 3rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            a{
+                color: var(--text-secondary);
+            }
+            
+            strong{
+                font-weight: 600;
+            }
+        }
+
+        &:nth-child(2){
+            .content-data{
+                background-color: var(--background-color-light);
+            }
+        }
+
+        &:nth-child(4){
+            .content-data{
+                background-color: var(--bg-light-2);
+                color: var(--text-secondary);
+            }
+        }
+    }
+}
+
+.handwerk-content-section{
+    .handwerk-content-wrapper{
+        border-top: 2px solid var(--border-black);
+        border-bottom: 2px solid var(--border-black);
+        padding: 2rem 0;
+    }
+}

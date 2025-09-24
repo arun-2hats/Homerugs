@@ -245,13 +245,13 @@ body {
     align-items: center;
   }
   
-  .col-4 {
+  /* .col-4 {
     flex: 0 0 100%;
   }
   
   .col-6 {
     flex: 0 0 50%;
-  }
+  } */
 }
 
 /* Smooth scrolling */
