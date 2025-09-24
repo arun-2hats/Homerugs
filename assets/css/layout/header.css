@@ -152,7 +152,7 @@
 }
 
 /* Mobile Search Responsive Styles */
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .search-wrapper input[type="text"] {
     padding: var(--spacing-xs) var(--spacing-lg) var(--spacing-xs) var(--spacing-sm);
     font-size: var(--font-size-sm);
@@ -164,7 +164,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .search-wrapper input[type="text"] {
     padding: var(--spacing-sm) var(--spacing-xl) var(--spacing-sm) var(--spacing-md);
   }
@@ -173,7 +173,7 @@
 /* Desktop Search Minimum Width */
 @media (min-width: 1200px) {
   .desktop-search .search-wrapper {
-    min-width: 295px;
+    min-width: 200px;
   }
 }
 
@@ -267,7 +267,7 @@
   padding: 1rem 0;
   color: var(--text-color);
   text-decoration: none;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-lg);
   font-weight: 400;
   transition: color 0.3s ease;
 }
@@ -282,6 +282,10 @@
   }
 }
 
+.offcanvas-title{
+  font-size: var(--font-size-xxl);
+}
+
 /* Mobile Navigation Responsive */
 @media (min-width: 768px) {
   .mobile-nav {
@@ -294,5 +298,12 @@
   .mobile-nav {
     margin: 0 -2rem;
     padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main-navigation ul {
+    margin: 0;
+    gap: 1.5rem !important;
   }
 }
