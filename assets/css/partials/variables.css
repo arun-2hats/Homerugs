@@ -6,15 +6,20 @@
   --accent-color: #912d24;
   --background-color-light: #E0E0E0;
   --background-color-dark: #4A4A4A;
+  --background-color-darker: #1F3640;
   --bg-gray: #F1F1F1;
   --text-color: #000000;
   --text-light: #4A4A4A;
   --text-white: #ffffff;
   --border-color: #e0e0e0;
+<<<<<<< HEAD
   --border-black: #000000;
   --bg-light-1: #F5F1E8;
   --bg-light-2: #C49E74;
   --text-secondary: #4A4A4A;
+=======
+  --icon-color: #BF6A02;
+>>>>>>> main
   
   /* Typography */
   --font-primary: 'Inter', sans-serif;
@@ -57,7 +62,7 @@
   
   /* Layout */
   --max-width: 1200px;
-  --border-radius: 4px;
+  --border-radius: 8px;
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -161,7 +166,7 @@
     --font-size-lg: 24px;
     --font-size-xl: 30px;
     --font-size-xxl: 32px;
-    --font-size-display: 52px;
+    --font-size-display: 48px;
     
     /* Heading Font Sizes */
     --h1-font-size: 48px;
