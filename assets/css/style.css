@@ -9,7 +9,8 @@
 @import url('./layout/footer.css');
 
 /* Import all pages CSS */
-@import url('./pages/banner.css');
+@import url('./pages/brand.css');
+@import url('./icon.css');
 @import url('./pages/home.css');
 
 /* Custom font import */
@@ -262,7 +263,7 @@ html {
 
 /* Focus styles for accessibility */
 *:focus {
-  outline: 2px solid var(--primary-color);
+  outline-color: var(--primary-color);
   outline-offset: 2px;
 }
 
