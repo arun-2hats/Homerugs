@@ -246,14 +246,13 @@ body {
     align-items: center;
   }
   
-  .row {
-    flex-direction: column;
+  /* .col-4 {
+    flex: 0 0 100%;
   }
   
-  .col-4, .col-6 {
-    flex: 0 0 100%;
-    margin-bottom: var(--spacing-lg);
-  }
+  .col-6 {
+    flex: 0 0 50%;
+  } */
 }
 
 /* Smooth scrolling */

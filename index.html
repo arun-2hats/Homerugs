@@ -37,7 +37,7 @@
                     
                     <div class="mobile-actions d-flex align-items-center gap-3">
                         <button class="mobile-menu-toggle " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                            <span class="navbar-toggler-icon"></span>
+                            <i class="icon-menu"></i>
                         </button>
                     </div>
                 </div>
@@ -47,8 +47,8 @@
                 <!-- Mobile Search Bar (visible on mobile/tablet) -->
                 <div class="mobile-search d-flex d-xl-none w-100 pb-3">
                     <div class="search-wrapper flex-grow-1">    
-                        <input type="text" placeholder="Search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" aria-label="Search">
+                        <i class="icon-search"></i>
                     </div>
                 </div>
 
@@ -70,8 +70,8 @@
             
                     <div class="desktop-search">
                         <div class="search-wrapper">    
-                            <input type="text" placeholder="Search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" aria-label="Search">
+                            <i class="icon-search"></i>
                         </div>
                     </div>
                 </div>
@@ -354,38 +354,38 @@
                     <h2 class="">Unsere Wohnwelten</h2>
 
                     <div class="row g-4">
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-6 col-md-4">
                             <div class="home-our-worlds-card">
                                 <img src="./assets/images/essen.png" alt="Our Worlds 1" />
                             </div>
                             <h3>Essen</h3>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-6 col-md-4">
                             <div class="home-our-worlds-card">
                                 <img src="./assets/images/wohnen.png" alt="Our Worlds 1" />
                             </div>
                             <h3>Wohnen</h3>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-6 col-md-4">
                             <div class="home-our-worlds-card">
                                 <img src="./assets/images/schlafen.png" alt="Our Worlds 1" />
                             </div>
                             <h3>Schlafen</h3>
                         </div>
                         
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-6 col-md-4">
                             <div class="home-our-worlds-card">
                                 <img src="./assets/images/garten.png" alt="Our Worlds 1" />
                             </div>
                             <h3>Garten</h3>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-6 col-md-4">
                             <div class="home-our-worlds-card">
                                 <img src="./assets/images/teppiche.png" alt="Our Worlds 1" />
                             </div>
                             <h3>Badezimmer</h3>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-6 col-md-4">
                             <div class="home-our-worlds-card">
                                 <img src="./assets/images/office.png" alt="Our Worlds 1" />
                             </div>
@@ -396,14 +396,87 @@
             </section>
 
             <section class="inspiration-content-section ">
-                <div class="container-small inspiration-content-wrapper">
-                    <h1>Inspiration für Ihr Zuhause</h1>
+                <div class="container-small ">
+                  <div class=" inspiration-content-wrapper">
+                    <h2>Inspiration für Ihr Zuhause</h2>
                     <p class="subtitle">
                       Roviva Schlafzimmermöbel vereinen zeitloses Design mit Schweizer
                       Präzision. Für spürbare Qualität und erholsamen Schlaf - Tag für
                       Tag.
                     </p>
+                  </div>
                 </div>
+            </section>
+
+            <section>
+              <div class="mobel-mithalung-section">
+                <div class="container-small">
+                  <h2>Möbel mit Haltung - seit Generationen.</h2>
+                  <p class="subtitle">
+                    Bei Möbel Waeber geht es um mehr als Möbel. Es geht um Räume zum Wohlfühlen, um Qualität mit Bestand und um Beratung mit Herz.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="content-with-image-section container d-flex flex-column">
+                <!-- History Section -->
+                <div class="image-content-wrapper row g-0">
+                  <div class="col-12 col-lg-6">
+                    <img src="./assets/images/history.jpg" alt="History" />
+                  </div>
+                  <div class="content-data col-12 col-lg-6">
+                    <h2>Ein Familienbetrieb nit Geschichte</h2>
+                    <p>
+                      1933 gegründet, steht Möbel Waeber seit über 90 Jahren für Verlässlichkeit, Qualität und Nähe zur Kundschaft. Aus einem kleinen Laden wurde ein fest verankerter Betrieb in der Region
+                      - mit vielen treuen Kundinnen und Kunden über Generationen hinweg.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Todays Section -->
+                <div class="image-content-wrapper row g-0">
+                  <div class="content-data col-12 col-lg-6 order-2 order-lg-1">
+                    <h2>Heute: Raum für Wohnideen</h2>
+                    <p>
+                      Auf über 10'000 m² zeigen wir, wie modernes Wohnen heute aussieht - stilvoll, funktional und inspirierend. Ob Sofa, Tisch oder Teppich: Wir bieten Qualität, die bleibt, und Beratung, die persönlich ist. Möbel Waeber ist und bleibt ein Familienunternehmen mit Handschlagqualität.
+                    </p>
+                  </div>
+                  <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img src="./assets/images/today.jpg" alt="History" />
+                  </div>
+                </div>
+
+                <!-- Text Content Section -->
+                <div class="handwerk-content-section">
+                  <div class=" handwerk-content-wrapper">
+                    <h2>Handwerk mit Herz und Verstand</h2>
+                    <p class="subtitle">
+                      Unsere Leidenschaft fürs Wohnen hört nicht beim Möbel auf. Seit jeher gehört auch das Handwerk zu Möbel Waeber -
+                      ob präzise Anpassung, Massanfertigung oder sorgsame Montage. So entstehen Lösungen, die perfekt passen - und ein Service, auf den man sich verlassen kann.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Carpentry Section -->
+                <div class="image-content-wrapper row g-0">
+
+                  <div class="col-12 col-lg-6">
+                    <img src="./assets/images/carpentry-workshop.jpg" alt="History" />
+                  </div>
+                  <div class="content-data col-12 col-lg-6">
+                    <h2>Massarbeit aus unserer Schreinerei </h2>
+                    <p>
+                      Ob millimetergenaue Anpassung, Möbelumbau oder individuelle Anfertigung: Unser erfahrenes Schreinerteam setzt Ihre Wohnideen zuverlässig um.Präzise, persönlich und mit viel Liebe zum Detail.
+                    </p>
+                    <p>
+                      <strong>
+                        📞 Rufen Sie uns an unter: <br><a href="tel:+41449534040">044 953 40 40</a></p>
+                      </strong>
+                  </div>
+                </div>
+              </div>
             </section>
         </main>
 
@@ -411,7 +484,7 @@
         <footer class="">
             <div class="footer-wrapper">
                 <div class="footer-bg container">
-                    <div class="top-footer d-flex flex-row justify-content-between flex-wrap gap-5">
+                    <div class="top-footer d-flex flex-column flex-sm-row justify-content-between flex-wrap gap-4 gap-lg-5 text-center text-sm-start">
                         <div class="contact-details-wrapper">
                             <h3>Möbel Waeber AG</h3>
                             <p>Usterstr./ Schanzstr. 2</p>
@@ -437,12 +510,15 @@
                             </ul>
                         </div>
                 
-                        <div class="social-media-wrapper ">
-                            <h3>Social Media</h3>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">Twitter</a></li>
+                        <div class="social-media-wrapper d-flex flex-column align-items-center align-items-sm-start justify-content-center justify-content-sm-start">
+                            <h3 >Social Media</h3>
+                            <ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
+                              <li><a href="#">
+                                <i class="icon-facebook"></i>
+                              </a></li>
+                              <li><a href="#">
+                                <i class="icon-instagram"></i>
+                              </a></li>
                             </ul>
                         </div>
                     </div>
@@ -462,11 +538,11 @@
             <div class="offcanvas-body">
                 <nav class="mobile-navigation">
                     <ul class="list-unstyled mb-0">
-                        <li><a href="tel:+41449534040">Tel. Nr. +41 44 953 40 40</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="#">Wohnwelten</a></li>
-                        <li><a href="#">Marken</a></li>
-                        <li><a href="#">Über uns</a></li>
+                      <li><a href="#">Kontakt</a></li>
+                      <li><a href="#">Wohnwelten</a></li>
+                      <li><a href="#">Marken</a></li>
+                      <li><a href="#">Über uns</a></li>
+                      <li><a href="tel:+41449534040">Tel. Nr. +41 44 953 40 40</a></li>
                     </ul>
                 </nav>
             </div>
