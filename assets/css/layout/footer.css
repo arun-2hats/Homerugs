@@ -18,6 +18,8 @@ footer {
     }
     p {
         margin-bottom: 0 !important;
+        font-size: var(--font-size-lg);
+        line-height: 1.5;
     }
 
     ul{
@@ -29,6 +31,22 @@ footer {
                 font-size: var(--font-size-lg);
                 font-weight: lighter;
             }
+        }
+    }
+    .quick-links{
+        ul{
+            li{
+                a{
+                    font-size: var(--font-size-xl);
+                }
+            }
+        }
+    }
+
+    .bottom-footer{
+        p{
+            font-size: var(--font-size-xl);
+            line-height: 1.5;
         }
     }
 }
