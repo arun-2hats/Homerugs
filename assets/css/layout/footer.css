@@ -1,6 +1,6 @@
 footer {
     padding-top: 2.5rem;
-    background-color: var(--background-color-dark);
+    background-color: var(--background-color-darker);
     .footer-wrapper {
         background-color: var(--background-color-light);
         padding: 4rem 0;
