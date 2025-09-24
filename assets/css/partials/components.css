@@ -208,6 +208,7 @@
   width: 18.75rem;
   background-color: var(--bg-gray);
   max-width: 100%;
+  position: relative;
 }
 
 .product-card .image-wrapper img {
@@ -232,6 +233,208 @@
 
 .product-card .product-info button {
   margin-top: .6rem;
+}
+.product-card .image-wrapper .offer-badge {
+  background-color: var(--accent-color);
+  color: var(--text-white);
+  border-radius: var(--border-radius);
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  span{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-white);
+    line-height: 0;
+  }
+
+  p{
+    font-size: .6rem;
+    font-weight: bold;
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 2.9;
+    
+  }
+}
+.footer-contact-section {
+  background-color: var(--background-color-darker);
+  text-align: center;
+  color: var(--text-white);
+  padding: 3.75rem 0;
+  margin-bottom: var(--section-padding);
+}
+
+.footer-contact-section a {
+  color: var(--text-white);
+  font-size: var(--font-size-display);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.news-letter h2{
+  margin-bottom: 1rem;
+  line-height: .8;
+}
+
+.news-letter p{
+  margin-bottom: var(--spacing-xxl);
+}
+
+.news-letter ul {
+  margin-bottom: 2rem;
+}
+
+.news-letter ul li {
+  list-style: none;
+  font-size: var(--font-size-xxl);
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.news-letter ul li span {
+  color: var(--icon-color);
+  font-size: 40px;
+}
+
+.register-offcanvas {
+  padding: var(--spacing-md);
+  overflow: auto;
+}
+
+.register-offcanvas .offcanvas-header {
+  position: relative;
+  border: none;
+  padding-top: 0;
+}
+
+.register-offcanvas .offcanvas-header button {
+  position: absolute;
+  right: .5rem;
+}
+
+.register-offcanvas .offcanvas-body {
+  overflow: visible;
+}
+
+.register-offcanvas .offcanvas-body form {
+  overflow: auto;
+}
+
+.register-offcanvas .email-input{
+  height: 85px;
+  border: 0.5px solid var(--text-color);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xl);
+}
+.register-offcanvas input[type="checkbox"]{
+  height: 43px;
+  width: 43px;
+  border-radius: 10px !important;
+  border: 0.5px solid var(--text-color);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.register-offcanvas .checkbox-group{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.register-offcanvas .checkbox-group label{
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+
+.register-offcanvas input[type="checkbox"]:checked{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17l-5-5' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% 70%;
+}
+
+.register-offcanvas h5 {
+  width: 100%;
+  text-align: center;
+}
+
+.register-offcanvas p {
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-lg);
+}
+
+.register-offcanvas ul {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+  font-weight: lighter;
+  list-style: disc;
+  padding-left: var(--spacing-xl);
+  list-style-position: outside;
+}
+
+@media screen and (min-width: 500px) {
+  .register-offcanvas {
+    width: 30rem !important;
+  }
+}
+.product-card .image-wrapper .offer-badge {
+  background-color: var(--accent-color);
+  color: var(--text-white);
+  border-radius: var(--border-radius);
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  span{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-white);
+    line-height: 0;
+  }
+
+  p{
+    font-size: .6rem;
+    font-weight: bold;
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 2.9;
+    
+  }
 }
 
 .footer-contact-section {

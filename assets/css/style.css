@@ -7,8 +7,11 @@
 @import url('./partials/components.css');
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
+
+/* Import all pages CSS */
 @import url('./pages/brand.css');
 @import url('./icon.css');
+@import url('./pages/home.css');
 
 /* Custom font import */
 @font-face {

@@ -3,7 +3,7 @@
   /* Colors */
   --primary-color: #2F4F4F;
   --secondary-color: #EC221F;
-  --accent-color: #e74c3c;
+  --accent-color: #912d24;
   --background-color-light: #E0E0E0;
   --background-color-dark: #4A4A4A;
   --background-color-darker: #1F3640;
@@ -136,7 +136,7 @@
     --font-size-base: 18px;
     --font-size-lg: 21px;
     --font-size-xl: 28px;
-    --font-size-xxl: 32px;
+    --font-size-xxl: 28px;
     --font-size-display: 48px;
     
     /* Heading Font Sizes */
