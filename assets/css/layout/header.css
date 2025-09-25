@@ -155,6 +155,58 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+/* Mobile Navigation Menu */
+.mobile-nav {
+  display: none;
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-color);
+  margin: 0 -1rem;
+  padding: 1rem;
+}
+
+.mobile-nav.show {
+  display: block;
+}
+
+.mobile-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-navigation li {
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-navigation li:last-child {
+  border-bottom: none;
+}
+
+.mobile-navigation li a {
+  display: block;
+  padding: 1rem 0;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.mobile-navigation li a:hover {
+  color: var(--secondary-color);
+}
+
+.social-media-wrapper {
+  i {
+    font-size: var(--font-size-xxl);
+  }
+}
+
+.offcanvas-title {
+  font-size: var(--font-size-xxl);
+}
+
+
 /* Mobile Search Responsive Styles */
 @media (max-width: 576px) {
   .search-wrapper input[type="text"] {
@@ -218,9 +270,9 @@
 }
 
 @media (min-width: 1200px) {
-  .desktop-search {
+  /* .desktop-search {
     min-width: 295px;
-  }
+  } */
 
   .logo {
     max-width: 290px;
@@ -238,57 +290,6 @@
   }
 }
 
-/* Mobile Navigation Menu */
-.mobile-nav {
-  display: none;
-  background-color: #ffffff;
-  border-top: 1px solid var(--border-color);
-  margin: 0 -1rem;
-  padding: 1rem;
-}
-
-.mobile-nav.show {
-  display: block;
-}
-
-.mobile-navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
-.mobile-navigation li {
-  margin-bottom: 0;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.mobile-navigation li:last-child {
-  border-bottom: none;
-}
-
-.mobile-navigation li a {
-  display: block;
-  padding: 1rem 0;
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: var(--font-size-lg);
-  font-weight: 400;
-  transition: color 0.3s ease;
-}
-
-.mobile-navigation li a:hover {
-  color: var(--secondary-color);
-}
-
-.social-media-wrapper {
-  i {
-    font-size: var(--font-size-xxl);
-  }
-}
-
-.offcanvas-title {
-  font-size: var(--font-size-xxl);
-}
-
 /* Mobile Navigation Responsive */
 @media (min-width: 768px) {
   .mobile-nav {
@@ -304,7 +305,11 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1500px) {
   .main-navigation ul {
     margin: 0;
     gap: 1.5rem !important;
