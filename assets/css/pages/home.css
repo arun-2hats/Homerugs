@@ -4,7 +4,7 @@
 
     .statistic-card{
         .statistic-count{
-            font-size: 3.2rem;
+            font-size: 4rem;
             font-weight: 700;
             color: var(--accent-color);
             line-height: 1;
@@ -12,14 +12,14 @@
             min-width: 100px;
         }
         .statistic-title{
-            font-size: var(--font-size-lg);
+            font-size: var(--font-size-xxl);
             font-weight: 600;
             color: var(--text-color);
         }
         .statistic-subtitle{
-            font-size: var(--font-size-base);
-            font-weight: 400;
-            line-height: 1.5;
+            font-size: var(--font-size-lg);
+            font-weight: 300;
+            line-height: 1.25;
         }
     }
 }
@@ -57,6 +57,9 @@
         font-size: var(--font-size-lg);
         margin-top: 1.5rem;
     }
+    a {
+        color: var(--text-color);
+    }
 }
 
 .inspiration-content-section{
@@ -67,6 +70,7 @@
         padding: 1rem 0;
         h2{
             padding: 1.25rem 0;
+            margin-bottom: 0;
         }
     }
 }
