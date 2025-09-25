@@ -38,6 +38,6 @@
 /* Extra Extra Large devices (xxl) - ≥1400px */
 @media (min-width: 1400px) {
   .container-small {
-    max-width: 950px;
+    max-width: 960px;
   }
 } 
