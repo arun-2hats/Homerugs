@@ -1,3 +1,15 @@
+/* Mobile search slide animation */
+.slide-panel {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 280ms ease, opacity 240ms ease;
+}
+
+.slide-panel.is-open {
+  max-height: 120px; /* large enough to contain the input */
+  opacity: 1;
+}
 /* Header Styles */
 .header {
   background-color: #ffffff;
@@ -91,6 +103,10 @@
 
 .main-navigation li a:hover {
   color: var(--secondary-color);
+}
+
+.main-navigation li a:focus-visible {
+  outline: none;
 }
 
 /* Desktop Search */
@@ -196,6 +212,19 @@
   color: var(--secondary-color);
 }
 
+.mobile-navigation .accordion-button{
+  color: var(--text-color);
+  font-size: var(--font-size-lg);
+}
+.mobile-navigation .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.mobile-navigation .accordion-button:focus {
+  box-shadow: none;
+}
+
 .social-media-wrapper {
   i {
     font-size: var(--font-size-xxl);
@@ -270,10 +299,6 @@
 }
 
 @media (min-width: 1200px) {
-  /* .desktop-search {
-    min-width: 295px;
-  } */
-
   .logo {
     max-width: 290px;
     height: auto;
