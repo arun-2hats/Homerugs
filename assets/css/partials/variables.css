@@ -55,7 +55,7 @@
   --spacing-xl: 2rem;
   --spacing-xxl: 3rem;
 
-  --section-padding: 5rem;
+  --section-padding: 3rem;
   
   /* Layout */
   --max-width: 1200px;
@@ -84,6 +84,8 @@
     --h4-font-size: 20px;
     --h5-font-size: 18px;
     --h6-font-size: 16px;
+
+    --section-padding: 5rem;
   }
 }
 
