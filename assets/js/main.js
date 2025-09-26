@@ -263,8 +263,41 @@
     });
   }
 
+  // Product Gallery Swiper for mobile devices
+  function initProductGallerySwiper() {
+    const productGallerySwiper = new Swiper('.product-gallery-swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+      effect: 'slide',
+      speed: 300,
+      touchRatio: 1,
+      threshold: 5,
+      longSwipesRatio: 0.5,
+      longSwipesMs: 300,
+      followFinger: true,
+      allowTouchMove: true,
+      resistance: true,
+      resistanceRatio: 0.85,
+    });
+  }
+
   // Initialize product dropdowns when DOM is loaded
   document.addEventListener('DOMContentLoaded', function() {
     initBrandSwitching();
     initProductDropdowns();
+    initProductGallerySwiper();
   });
+
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})

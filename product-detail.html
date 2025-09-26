@@ -15,36 +15,23 @@
     <meta name="geo.region" content="CH">
     <meta name="geo.placename" content="Pfäffikon">
 
-    <!-- Favicons and Apple Touch Icons -->
-    <link rel="icon" type="image/x-icon"
-      href="/assets/images/icons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32"
-      href="/assets/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-      href="/assets/images/icons/favicon-16x16.png">
-
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180"
-      href="/assets/images/icons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152"
-      href="/assets/images/icons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144"
-      href="/assets/images/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120"
-      href="/assets/images/icons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114"
-      href="/assets/images/icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76"
-      href="/assets/images/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72"
-      href="/assets/images/icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60"
-      href="/assets/images/icons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57"
-      href="/assets/images/icons/apple-touch-icon-57x57.png">
-
+     	<!-- Favicons and Apple Touch Icons -->
+		<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
+		
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch-icon-57x57.png">
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://moebel-waeber.ch/">
+    <link rel="canonical" href="#">
 
     <!-- Bootstrap 5 CSS -->
     <link href="./vendor/css/bootstrap.min.css" rel="stylesheet" />
@@ -74,7 +61,7 @@
         <div
           class="mobile-header d-flex d-xl-none justify-content-between align-items-center w-100 py-3">
           <div class="logo-wrapper">
-            <a href="/">
+            <a href="index.html">
               <picture><img src="./assets/images/logo.png" alt="logo"
                   class="logo"></picture>
             </a>
@@ -107,7 +94,7 @@
         <div
           class="desktop-header d-none d-xl-flex justify-content-between align-items-center w-100">
           <div class="logo-wrapper">
-            <a href="/">
+            <a href="index.html">
               <picture><img src="./assets/images/logo.png" alt="logo"
                   class="logo"></picture>
             </a>
@@ -159,9 +146,10 @@
           <div class="row g-4">
             <!-- Left Column - Product Images -->
             <div class="col-12 col-lg-6 px-0">
-              <div class="product-gallery-section">
+              <!-- Desktop Gallery (hidden on mobile) -->
+              <div class="product-gallery-section d-none d-lg-block">
                 <!-- Main Lifestyle Image -->
-                <div class="mb-4">
+                <div class="w-100">
                   <picture>
                     <img src="./assets/images/MatratzeStimmung.jpg"
                       alt="Roviva Komfortmatratze in modernem Schlafzimmer"
@@ -169,47 +157,85 @@
                   </picture>
                 </div>
 
-                <div class="mb-4">
+                <div class="w-100">
                   <picture>
-                    <img src="./assets/images/MatratzeStimmung.jpg"
+                    <img src="./assets/images/MatratzeStimmung-2.jpg"
                       alt="Roviva Komfortmatratze in modernem Schlafzimmer"
                       class="img-fluid w-100">
                   </picture>
                 </div>
 
-                <div class="mb-4">
+                <div class="w-100">
                   <picture>
-                    <img src="./assets/images/MatratzeStimmung.jpg"
+                    <img src="./assets/images/MatratzeStimmung-3.jpg"
                       alt="Roviva Komfortmatratze in modernem Schlafzimmer"
                       class="img-fluid w-100">
                   </picture>
                 </div>
 
-                <div class="mb-4">
+                <div class="w-100">
                   <picture>
-                    <img src="./assets/images/MatratzeStimmung.jpg"
+                    <img src="./assets/images/MatratzeStimmung-4.jpg"
                       alt="Roviva Komfortmatratze in modernem Schlafzimmer"
                       class="img-fluid w-100">
                   </picture>
                 </div>
 
               </div>
+
+              <!-- Mobile Swiper Gallery (visible only on mobile) -->
+              <div class="product-gallery-swiper d-lg-none">
+                <div class="swiper product-gallery-swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <img src="./assets/images/MatratzeStimmung.jpg"
+                          alt="Roviva Komfortmatratze in modernem Schlafzimmer"
+                          class="img-fluid w-100">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <img src="./assets/images/MatratzeStimmung.jpg"
+                          alt="Roviva Komfortmatratze in modernem Schlafzimmer"
+                          class="img-fluid w-100">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <img src="./assets/images/MatratzeStimmung.jpg"
+                          alt="Roviva Komfortmatratze in modernem Schlafzimmer"
+                          class="img-fluid w-100">
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <img src="./assets/images/MatratzeStimmung.jpg"
+                          alt="Roviva Komfortmatratze in modernem Schlafzimmer"
+                          class="img-fluid w-100">
+                      </picture>
+                    </div>
+                  </div>
+                  <!-- Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
 
             <!-- Right Column - Product Information (Sticky) -->
-            <div class="col-12 col-lg-6 px-4 main-product-info-sticky">
+            <div class="col-12 col-lg-6 px-4 pe-lg-0 main-product-info-sticky">
               <div class="product-info-sticky">
                 <div class="row g-4">
                   <!-- Left Column - Main Product Info -->
                   <div class="col-12">
                     <div class="row g-4">
-                      <div class="col-12 col-lg-8">
+                      <div class="col-12 col-xl-7">
                         <!-- Product Title -->
                         <div class="product-title-section mb-4">
                           <h1 class>Roviva Komfortmatratze</h1>
                         </div>
                       </div>
-                      <div class="col-12 col-lg-4">
+                      <div class="col-12 col-xl-5 mt-0 mt-lg-4">
                         <div class="product-pricing-header mb-4">
                           <div class="product-price-original-header">CHF
                             390.-</div>
@@ -219,7 +245,7 @@
                     </div>
                   </div>
 
-                  <div class="col-12">
+                  <div class="col-12 mt-0 mt-lg-4">
                     <div class="row g-4">
                       <div class="col-12">
                         <div class="product-description mb-4">
@@ -241,7 +267,7 @@
 
                   <div class="col-12">
                     <div class="row g-4 justify-content-between">
-                      <div class="col-12 col-lg-7">
+                      <div class="col-12 col-xl-7">
                         <div class="product-specifications mb-4">
                           <div class="specification-item">
                             <span class="specification-label">Artikel Nr.</span>
@@ -266,15 +292,15 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-lg-4">
+                      <div class="col-12 col-xl-4">
                         <div class="delivery-options-sidebar">
                           <div class="delivery-options-card">
-                            <h4
-                              class="delivery-options-title">LIEFEROPTIONEN</h4>
-                            <div class="delivery-options-list">
+                            <h3
+                              class="h4 delivery-options-title">LIEFEROPTIONEN</h3>
+                            <div class="delivery-options-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Enjoy the convenience of our free pickup service!">
                                 <img src="./assets/images/product-icons.svg" alt="Lieferoptionen">
                             </div>
-                            <div class="delivery-options-list">
+                            <div class="delivery-options-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Get your orders delivered right to your doorstep!">
                               <img src="./assets/images/product-icons1.svg" alt="Lieferoptionen">
                           </div>
                           </div>
@@ -283,7 +309,7 @@
                     </div>
                   </div>
                   <!-- Call to Action -->
-                  <div class="product-actions-main">
+                  <div class="product-actions-main mt-4">
                     <button class="btn btn-primary">Reservieren &
                       Abholen</button>
                   </div>
@@ -374,12 +400,18 @@
               <h3>Social Media</h3>
               <ul
                 class="list-unstyled d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
-                <li><a href="#">
-                    <i class="icon-facebook"></i>
-                  </a></li>
-                <li><a href="#">
-                    <i class="icon-instagram"></i>
-                  </a></li>
+                <li><a href="#"
+                  aria-label="Follow us on Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="icon-facebook"></i>
+              </a></li>
+          <li><a href="#"
+                  aria-label="Follow us on Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="icon-instagram"></i>
+              </a></li>
               </ul>
             </div>
           </div>

@@ -15,22 +15,20 @@
 		name="geo.placename" content="Pfäffikon">
 
 		<!-- Favicons and Apple Touch Icons -->
-		<link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon.ico">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
-		<link
-		rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
-
+		<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon-16x16.png">
+		
 		<!-- Apple Touch Icons -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon-180x180.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/icons/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/apple-touch-icon-60x60.png">
-		<link
-		rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/apple-touch-icon-57x57.png">
 
 		<!-- Canonical URL -->
 		<link
@@ -67,7 +65,7 @@
 				<!-- Mobile Header Layout (xs, sm, md, lg) -->
 				<div class="mobile-header d-flex d-xl-none justify-content-between align-items-center w-100 py-3">
 					<div class="logo-wrapper">
-						<a href="/">
+						<a href="index.html">
 							<picture><img src="./assets/images/logo.png" alt="logo" class="logo"></picture>
 						</a>
 					</div>
@@ -93,7 +91,7 @@
 				<!-- Desktop Header Layout (xl+) -->
 				<div class="desktop-header d-none d-xl-flex justify-content-between align-items-center w-100">
 					<div class="logo-wrapper">
-						<a href="/">
+						<a href="index.html">
 							<picture><img src="./assets/images/logo.png" alt="logo" class="logo"></picture>
 						</a>
 					</div>
@@ -269,10 +267,10 @@
 									</div>
 									<div class="col-12">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
-											<label class="form-check-label" for="privacy">
+											<input class="form-check-input" type="checkbox" id="privacycheckbox" name="privacy" required>
+											<label class="form-check-label" for="privacycheckbox">
 												Ich stimme der Verarbeitung meiner Daten gemäß der
-												<a href="#" target="_blank">Datenschutzerklärung</a>
+												<a href="#" target="_blank" aria-label="Datenschutzerklärung" class="text-decoration-underline">Datenschutzerklärung</a>
 												zu. *
 											</label>
 										</div>
@@ -319,7 +317,7 @@
 							<div class="col-12 col-lg-6 image-area">
 								<div class="image-right">
 
-									<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6683.120706073413!2d8.775334820444689!3d47.36398657460277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479abc922111170b%3A0x18f387f9451d25eb!2sM%C3%B6bel%20Waeber%20AG!5e0!3m2!1sde!2sch!4v1670239809924!5m2!1sde!2sch" width="100%" height="100%" allowfullscreen="allowfullscreen" loading="lazy"></iframe>
+									<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6683.120706073413!2d8.775334820444689!3d47.36398657460277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479abc922111170b%3A0x18f387f9451d25eb!2sM%C3%B6bel%20Waeber%20AG!5e0!3m2!1sde!2sch!4v1670239809924!5m2!1sde!2sch" width="100%" height="100%" allowfullscreen="allowfullscreen" loading="lazy" aria-label="Google Maps"></iframe>
 								</div>
 							</div>
 						</div>
@@ -407,16 +405,18 @@
 						<div class="social-media-wrapper d-flex flex-column align-items-center align-items-sm-start justify-content-center justify-content-sm-start">
 							<h3>Social Media</h3>
 							<ul class="list-unstyled d-flex gap-3 align-items-center justify-content-center justify-content-sm-start">
-								<li>
-									<a href="#">
-										<i class="icon-facebook"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="icon-instagram"></i>
-									</a>
-								</li>
+								<li><a href="#"
+									aria-label="Follow us on Facebook"
+									target="_blank"
+									rel="noopener noreferrer">
+									<i class="icon-facebook"></i>
+								</a></li>
+							<li><a href="#"
+									aria-label="Follow us on Instagram"
+									target="_blank"
+									rel="noopener noreferrer">
+									<i class="icon-instagram"></i>
+								</a></li>
 							</ul>
 						</div>
 					</div>
